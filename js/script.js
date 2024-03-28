@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // wow initiation
+   
     new WOW().init();
   
-    // navigation bar toggle
+    
     document.querySelector('#navbar-toggler').addEventListener('click', function() {
       document.querySelector('.navbar-collapse').style.display = 'block';
       setTimeout(function() {
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }, 400);
     });
   
-    // navbar bg change on scroll
+    
     window.addEventListener('scroll', function() {
       let pos = window.scrollTop();
       if (pos >= 100) {
@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   
-    // squads carousel
     document.querySelectorAll('.squads .owl-carousel').forEach(function(element) {
       owlCarousel(element, {
         loop: true,
